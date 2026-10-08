@@ -1,0 +1,93 @@
+{
+
+margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body { font-family: Arial, Helvetica, sans-serif; background-color: #fff5f7; color: #3d2730; line-height: 1.7; }
+
+.container { width: 90%; max-width: 1100px; margin: 0 auto; }
+
+/* CABEÇALHO */
+
+header { background: linear-gradient(135deg, #8e244d, #d94f70); color: white; text-align: center; padding: 60px 20px; }
+
+header h1 { font-size: 2.8rem; margin-bottom: 10px; }
+
+header p { font-size: 1.1rem; }
+
+/* MENU */
+
+nav { background-color: #4b1d32; position: sticky; top: 0; z-index: 10; }
+
+nav ul { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; }
+
+nav li a { display: block; color: white; text-decoration: none; padding: 15px 25px; transition: background-color 0.3s, color 0.3s; }
+
+nav li a:hover { background-color: #f4a6b9; color: #4b1d32; }
+
+/* CONTEÚDO */
+
+main { padding: 40px 0; }
+
+article { background-color: white; padding: 35px; border-radius: 12px; box-shadow: 0 5px 20px rgba(75, 29, 50, 0.08); }
+
+section { margin-bottom: 50px; }
+
+h2 { color: #8e244d; font-size: 2rem; margin-bottom: 20px; border-left: 5px solid #d94f70; padding-left: 12px; }
+
+h3 { color: #a33258; margin: 20px 0 10px; }
+
+p { margin-bottom: 18px; }
+
+/* IMAGENS */
+
+section img { width: 100%; max-height: 450px; object-fit: cover; border-radius: 10px; margin: 15px 0 25px; }
+
+/* LISTAS */
+
+ul { padding-left: 25px; margin-bottom: 20px; }
+
+li { margin-bottom: 8px; }
+
+/* CITAÇÃO */
+
+blockquote { background-color: #fff0f3; border-left: 5px solid #d94f70; padding: 20px; margin: 25px 0; font-style: italic; color: #6b3044; }
+
+/* COMPARAÇÃO */
+
+.comparacao { display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; }
+
+.card { background-color: #fff0f3; padding: 25px; border-radius: 10px; border-top: 5px solid #d94f70; }
+
+.card h3 { margin-top: 0; }
+
+/* ASIDE */
+
+aside { margin-top: 30px; background-color: #4b1d32; color: white; padding: 30px; border-radius: 12px; }
+
+aside h2, aside h3 { color: #f7b5c6; }
+
+/* RODAPÉ */
+
+footer { background-color: #301521; color: white; text-align: center; padding: 30px 20px; margin-top: 30px; }
+
+footer p { margin-bottom: 5px; }
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 700px) {
+
+header { padding: 40px 15px; }
+
+header h1 { font-size: 2rem; }
+
+nav ul { flex-direction: column; text-align: center; }
+
+nav li a { padding: 10px; }
+
+article { padding: 20px; }
+
+h2 { font-size: 1.6rem; }
+
+.comparacao { grid-template-columns: 1fr; } }
